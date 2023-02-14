@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Post(models.Model):
 
+    # adding status class
     class Status(models.TextChoices):
         DRAFT = 'DF', 'Draft'
         PUBLISHED = 'PB', 'Published'
